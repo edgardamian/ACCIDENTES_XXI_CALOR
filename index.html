@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Accidentes Viales - Michoacán</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>🚗 Mapa de Accidentes Viales</h1>
+        <p>Análisis interactivo de accidentes en Michoacán</p>
+    </div>
+    
+    <div class="controls">
+        <button id="togglePoints" class="active">📍 Mostrar Puntos</button>
+        <button id="toggleHeatmap">🔥 Mapa de Calor</button>
+        <button id="showBoth">🌐 Ambas Capas</button>
+    </div>
+    
+    <div id="map"></div>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <!-- Leaflet Heatmap Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
+    
+    <!-- Datos de accidentes -->
+    <script src="json/accidentes_altura.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="js/script.js"></script>
+</body>
+</html>
